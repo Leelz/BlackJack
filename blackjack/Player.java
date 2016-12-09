@@ -1,23 +1,23 @@
-package blackjack;
-import java.util.*;
+// package blackjack;
+// import java.util.*;
 
-public class Player {
+// public class Player {
 
-  private String name;
-  private SuitType suit;
+//   private String name;
+//   private SuitType suit;
 
-//Constructor
-  public Card(ValueType value, SuitType suit) {
-    this.value = value;
-    this.suit = suit;
-  }
+// //Constructor
+//   public Card(ValueType value, SuitType suit) {
+//     this.value = value;
+//     this.suit = suit;
+//   }
 
-  public ValueType getValue() {
-    return this.value;
-  }
+//   public ValueType getValue() {
+//     return this.value;
+//   }
 
-  public HandType getSuit() {
-    return this.suit;
-  }
+//   public HandType getSuit() {
+//     return this.suit;
+//   }
 
-}
+// }

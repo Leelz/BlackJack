@@ -1,6 +1,6 @@
 package blackjack;
 
-public enum ValueType {
+public enum RankType {
 
 ACE,
 ONE,
@@ -16,6 +16,5 @@ TEN,
 JACK,
 QUEEN,
 KING,
-ACE,
 
 }

@@ -8,17 +8,23 @@ public class CardTest {
   
   @Before 
   public void before(){
-    card = new Card(SuitType.HEART, ValueType.JACK);
+    card = new Card(RankType.JACK, SuitType.HEART, 10);
   }
 
   @Test
-    public void canGetSUIT() {
-      assertEquals(SuitType.HEART, card.getSUIT());
+    public void canGetSuit() {
+      assertEquals(SuitType.HEART, card.getSuit());
     }
 
     @Test
-    public void canGetVALUE() {
-      assertEquals(ValueType.JACK, card.getVALUE());
+    public void canGetRank() {
+      assertEquals(RankType.JACK, card.getRank());
+      System.out.println(card.getRank());
+    }
+
+    @Test
+    public void canGetValue() {
+      assertEquals(10, card.getValue());
       System.out.println(card.getValue());
     }
 

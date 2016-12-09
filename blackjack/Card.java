@@ -4,21 +4,27 @@ import java.util.*;
 
 public class Card {
 
-  private ValueType value;
+  private RankType rank;
   private SuitType suit; //Ace = 1, Jack-King = 11-13
+  private int value;
 
 //Constructor
-  public Card(ValueType a_value, SuitType a_suit) {
-    this.value = a_value;
-    this.suit = a_suit;
+  public Card(RankType rank, SuitType suit, int value) {
+    this.rank = rank;
+    this.suit = suit;
+    this.value = value;
   }
 
-  public ValueType getValue() {
-    return this.value;
+  public RankType getRank() {
+    return this.rank;
   }
 
-  public HandType getSuit() {
+  public SuitType getSuit() {
     return this.suit;
   }
+
+  public int getValue() {
+      return value;
+    }
 
 }
