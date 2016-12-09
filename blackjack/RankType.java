@@ -3,7 +3,6 @@ package blackjack;
 public enum RankType {
 
 ACE,
-ONE,
 TWO,
 THREE,
 FOUR,
