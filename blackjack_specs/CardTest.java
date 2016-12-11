@@ -1,6 +1,7 @@
 import static org.junit.Assert.*;
 import org.junit.*;
 import blackjack.*;
+import java.util.*;
 
 public class CardTest {
 
@@ -22,11 +23,15 @@ public class CardTest {
       System.out.println(card.getRank());
     }
 
-    // @Test
-    // public void canGetValue() {
-    //   assertEquals(10, card.getValue());
-    //   System.out.println(card.getValue());
-    // }
+    @Test
+    public void getRankValue() {
+      assertEquals(10, card.getRankValue());
+      System.out.println(card.getRankValue());
+    }
 
+    @Test
+    public void canPrintCard() {
+    card.printCard();
+    }
 
 }

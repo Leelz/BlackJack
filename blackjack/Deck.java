@@ -1,20 +1,38 @@
-// package blackjack;
-// import java.util.ArrayList;
+package blackjack;
+import java.util.*;
 
-// public class Deck {
+public class Deck {
 
-//   private ArrayList<Deck> stock;
+  private ArrayList<Card> deck;
 
-//   public Deck(){
-//     this.stock = new ArrayList<Deck>();
-//   }
+public Deck(ArrayList<Card> deck) {
+  this.deck = deck;
+  buildDeck();
+}
 
-//     public void addCard(Card card)
-//       stock.add(card)
-//     }
+public ArrayList getCards(){
+  return deck;
+}
 
-//     public void dealCard() {
-        
-//     }
+  public void buildDeck() {
+    for(SuitType suit : SuitType.values())  {
+      for (RankType rank : RankType.values()) {
+          deck.add(new Card(rank, suit));
+      }
+    }
+  }
 
-//   }
+public void shuffle() {
+ Collections.shuffle(deck);
+}
+
+// public Card DrawCard() {
+//   int cardPosition = shuffles.nextInt(Deck.size());
+// return Deck.remove(cardPosition);
+// }
+
+// public int TotalCardsLeft() {
+//   return Deck.size();
+// }
+
+}

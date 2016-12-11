@@ -3,21 +3,25 @@
 
 // public class Player {
 
-//   private String name;
-//   private SuitType suit;
+//   String name;
+//   Hand hand;
 
 // //Constructor
-//   public Card(ValueType value, SuitType suit) {
-//     this.value = value;
-//     this.suit = suit;
+//   public Card(String name, Hand hand) {
+//     this.name = name;
+//     this.hand = hand;
 //   }
 
-//   public ValueType getValue() {
-//     return this.value;
+//   public String getName() {
+//     return this.name;
 //   }
 
-//   public HandType getSuit() {
-//     return this.suit;
+//   public void addCardToHand(Card card) {
+//       hand.addCard(card);
+//     }
+
+//   public int getHandvalue() {
+//     return hand.getValue();
 //   }
 
 // }
