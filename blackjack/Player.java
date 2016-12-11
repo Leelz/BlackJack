@@ -16,12 +16,16 @@ public class Player {
     return this.name;
   }
 
-  public int getHandValue() {
-    return hand.getValue();
-  }
-
   public void addCardToHand(Card card) {
       hand.addDealtCardToHand(card);
     }
+
+  public int handSize(){
+      return hand.getCards().size();
+    }
+
+  public int getHandValue() {
+    return hand.getValue();
+  }
 
 }

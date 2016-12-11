@@ -32,10 +32,10 @@ public class DeckTest {
         assertEquals(1, player.getHandValue());
       }
 
-    // @Test
-    //   public void deckRemovesCardFromPackWhenDealing() {
-    //     deck.drawCard();
-    //     assertEquals(51, deck.sizeOfDeck());
-    //   }
+    @Test
+      public void canRemoveCardFromDeck() {
+        deck.dealCard(player);
+        assertEquals(51, deck.getCards().size());
+      }
 
 }

@@ -30,8 +30,8 @@ public class CardTest {
     }
 
     @Test
-    public void canPrintCard() {
-    card.printCard();
+      public void canPrintCard() {
+      card.printCard();
     }
 
 }

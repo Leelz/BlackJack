@@ -8,7 +8,6 @@ public class Deck {
 
 public Deck(ArrayList<Card> deck) {
   this.deck = deck;
-  buildDeck();
 }
 
 public ArrayList getCards(){
@@ -23,25 +22,22 @@ public ArrayList getCards(){
     }
   }
 
-public void printDeck() {
-    for (Card card : deck){
-      System.out.println(card.getRank() + " (" + ") of " + card.getSuit());
-    }
-  }
-
 public void shuffle() {
  Collections.shuffle(deck);
 }
 
 public Card dealCard(Player player) {
-    Card dealtCard = deck.get(0);
-    player.addCardToHand(dealtCard);
-    deck.remove(0);
+      Card dealtCard = deck.get(0);
+      player.addCardToHand(dealtCard);
+      deck.remove(0);
     return dealtCard;
 }
 
-public void printDealtCard(Card dealtCard) {
-    System.out.println("Dealt card is " + dealtCard.getRank() + " of " + dealtCard.getSuit());
+public void printDeck() {
+    for (Card card : deck){
+      System.out.println(card.getRank() + " of " + card.getSuit());
+    }
   }
+
 
 }
