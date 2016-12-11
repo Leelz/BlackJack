@@ -16,8 +16,8 @@ public class Player {
     return this.name;
   }
 
-  public void addCardToHand(Card card) {
-      hand.addDealtCardToHand(card);
+  public void dealCardToHand(Card card) {
+      hand.canDealCardToHand(card);
     }
 
   public int handSize(){

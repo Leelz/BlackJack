@@ -13,7 +13,7 @@ public ArrayList getCards(){
   return this.hand;
 }
 
-public void addDealtCardToHand(Card dealtCard){
+public void canDealCardToHand(Card dealtCard){
     hand.add(dealtCard);
   }
 

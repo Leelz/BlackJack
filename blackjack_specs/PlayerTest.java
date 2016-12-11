@@ -23,8 +23,8 @@ public class PlayerTest {
 
    @Test
      public void canAddCardAndGetValue() {
-       player.addCardToHand(card);
-       assertEquals(1, player.getHandValue());
+       player.dealCardToHand(card);
+       assertEquals(1, player.handSize());
    }
 
 }

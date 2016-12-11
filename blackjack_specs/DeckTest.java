@@ -10,13 +10,13 @@ public class DeckTest {
   
   @Before 
   public void before(){
-    deck = new Deck(new ArrayList<Card>());
+    deck = new Deck(new ArrayList<Card>());    
     player = new Player("Snoop", new Hand());
   }
 
   @Test
     public void canBuildDeck() {
-      assertEquals(52, deck.getCards().size());
+      assertEquals(52, deck.deckSize());
     }
 
     @Test
@@ -28,14 +28,14 @@ public class DeckTest {
 
     @Test
       public void canDealCard() {
-        deck.dealCard(player);
-        assertEquals(1, player.getHandValue());
+        deck.dealCard();
+        assertEquals(1, player.handSize());
       }
 
     @Test
       public void canRemoveCardFromDeck() {
-        deck.dealCard(player);
-        assertEquals(51, deck.getCards().size());
+        deck.dealCard();
+        assertEquals(51, deck.deckSize());
       }
 
 }

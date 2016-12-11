@@ -6,13 +6,10 @@ public class Deck {
   private ArrayList<Card> deck;
 
 
-public Deck(ArrayList<Card> deck) {
-  this.deck = deck;
-}
-
-public ArrayList getCards(){
-  return deck;
-}
+  public Deck(ArrayList<Card> deck) {
+     this.deck = deck;
+     buildDeck();
+   }
 
   public void buildDeck() {
     for(SuitType suit : SuitType.values())  {
@@ -26,10 +23,8 @@ public void shuffle() {
  Collections.shuffle(deck);
 }
 
-public Card dealCard(Player player) {
-      Card dealtCard = deck.get(0);
-      player.addCardToHand(dealtCard);
-      deck.remove(0);
+public Card dealCard() {
+    Card dealtCard = deck.remove(0);
     return dealtCard;
 }
 
@@ -39,5 +34,8 @@ public void printDeck() {
     }
   }
 
+  public int deckSize(){
+      return deck.size();
+    }
 
 }
