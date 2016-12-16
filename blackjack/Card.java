@@ -31,8 +31,8 @@ public class Card {
        }
     }
 
-    public void printCard(){
-      System.out.println(this.rank + " of " + this.suit);
-      }
+  public void printCard(){
+    System.out.println(this.value + " of " + this.suit);
+  }
 
 }

@@ -4,11 +4,12 @@ import java.util.*;
 public class Dealer {
 
   private Deck deck;
-  public Hand hand;
+  private Hand hand;
 
-  public Dealer(Hand hand){
+  public Dealer(){
     this.deck = deck;
     this.hand = hand;
   }
+
   
 }

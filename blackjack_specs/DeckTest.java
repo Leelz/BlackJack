@@ -6,12 +6,10 @@ import java.util.*;
 public class DeckTest {
   
   Deck deck;
-  Player player;
   
   @Before 
   public void before(){
-    deck = new Deck(new ArrayList<Card>());    
-    player = new Player("Snoop", new Hand());
+    deck = new Deck();    
   }
 
   @Test
@@ -25,12 +23,6 @@ public class DeckTest {
       deck.shuffle();
       deck.printDeck();
     }
-
-    @Test
-      public void canDealCard() {
-        deck.dealCard();
-        assertEquals(1, player.handSize());
-      }
 
     @Test
       public void canRemoveCardFromDeck() {

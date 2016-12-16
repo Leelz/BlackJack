@@ -2,13 +2,10 @@ package blackjack;
 import java.util.*;
 
 public class Deck {
-
   private ArrayList<Card> deck;
 
-
-  public Deck(ArrayList<Card> deck) {
-     this.deck = deck;
-     buildDeck();
+  public Deck() {
+     this.deck = new ArrayList<Card>();
    }
 
   public void buildDeck() {
@@ -19,7 +16,11 @@ public class Deck {
     }
   }
 
-public void shuffle() {
+  public ArrayList getDeck(){
+    return this.packOfCards;
+  }
+
+public void shuffleDeck() {
  Collections.shuffle(deck);
 }
 

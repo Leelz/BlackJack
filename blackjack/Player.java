@@ -3,8 +3,8 @@ import java.util.*;
 
 public class Player {
 
-  private String name;
-  private Hand hand;
+  String name;
+  Hand hand;
 
 //Constructor
   public Player(String name, Hand hand) {
@@ -16,13 +16,13 @@ public class Player {
     return this.name;
   }
 
-  public void dealCardToHand(Card card) {
-      hand.canDealCardToHand(card);
-    }
+  public String getHand() {
+    return this.hand;
+  }
 
   public int handSize(){
-      return hand.getCards().size();
-    }
+    return hand.getHand().size();
+  }
 
   public int getHandValue() {
     return hand.getValue();
